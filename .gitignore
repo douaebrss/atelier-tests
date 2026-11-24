@@ -1,0 +1,9 @@
+@"
+node_modules/
+coverage/
+playwright-report/
+test-results/
+"@ | Set-Content .gitignore
+git rm -r --cached coverage
+git add .gitignore
+git commit -m "chore: ignore coverage et fichiers generes"
